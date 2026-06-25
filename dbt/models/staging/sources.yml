@@ -1,0 +1,9 @@
+version: 2
+sources:
+  - name: world_cup
+    database: kestra2-495702
+    schema: world_cup_analytics
+    tables:
+      - name: matches_external
+      - name: players
+      - name: scorers

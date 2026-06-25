@@ -1,0 +1,85 @@
+user:
+  outputs:
+    default:
+      job_execution_timeout_seconds: 300
+      keyfile_json:
+        auth_provider_x509_cert_url: https://www.googleapis.com/oauth2/v1/certs
+        auth_uri: https://accounts.google.com/o/oauth2/auth
+        client_email: joaopedro@kestra2-495702.iam.gserviceaccount.com
+        client_id: '111397039359143221193'
+        client_x509_cert_url: https://www.googleapis.com/robot/v1/metadata/x509/joaopedro%40kestra2-495702.iam.gserviceaccount.com
+        private_key: '-----BEGIN PRIVATE KEY-----
+
+          MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDHHB2aTejiNVqi
+
+          pvrK22kB/H2+z6L1J7nTWuBldw23BZAouRSWC2RrkKPsYej2RSxRRV9sjeoySzeI
+
+          LhPP+pgVbd75LjVFhypdZapYbxKhWLOvGpxxHeHPp9ZoT60bQvm9+eHD16qonhhZ
+
+          JJOtAWqKZ99rqe5+cR/aBa6kfkhv2EkY2gBIRe8DdcFpewLoql1zsRMvPQdLYmXn
+
+          zn4SSOEC1SBNgLjjpN3XzJX9T+uGIpxhAsoG5QMyQM7rnQwFooyCCl44VnDjP7yq
+
+          2bw6ycnuKV4y1IdUlC0b8Lv9VEbJo4q15c5Iex3mcbxkDhvEBiz2XyB8saS5n0V3
+
+          7F0TnyAnAgMBAAECggEANCLEC5n373eKBooTpFeEbP04zeRfprLiwRmMJXVhlXly
+
+          8H7aCZntDw9eJPDUR9wACT3RiUK1vrqcTV/HV0+mUAInfvbfAxgr+y26R5K5/Z6U
+
+          2jZtHV92N+IaTdEDIl7MtzZ9q8LGkIVpGbpuor/6rkgZo/7okJo9fWC8hJz+ia5R
+
+          5W6DK0PydbGVNjfda59KRJUfn0qCzLU6Ho5Fc4bXhScYy6OIp/V/oXABsJY++cxP
+
+          m/JFbrpjo4yM7FMt4ZfhBTP9EZ9lWKmXcRG75VgrI053DXQbho87nvGMAOTMVj1G
+
+          KitsXiLx/QX0upk2kOTqI7A2epYDcirI1TF/1xuEMQKBgQDhzRbmdYHD4xJz6s16
+
+          7VtwUERk7ysUWjwHHMiw5Zoc+dW2ro5H0MGa2K3zNfQTSzmDOaabTnnNZY/NhufE
+
+          QZ8AL5TX58jLBu5awsaPaSNKvfPnzrm2R3XfvKc4uIeJep7duK/sF/h93u2uv/ik
+
+          0dhZ9j9F01PA4OiBZVSmtAk/NwKBgQDhvS1reQSacyjguxZKZoNjFPLAwd6VxLsv
+
+          6qKvsTHZb2DIc3LhkBthvlQumoQqwXdo4vKxGoHV018yFmjaOfGuodo5dKAhuUbI
+
+          G3MmgemuIrTfH7nOJ5gLkP3KNkuEOXXK8fu/ZHUbiSlPl7AYMV8x3MVhrgVyw/th
+
+          k7XS5wU+kQKBgQDZewF9gtwzYbfaMeMrbQXPDWBynvEtLyP17cFWsC5ZjkBLLaEY
+
+          hnaSv/P69pJZKvD/9T0FBPbH3/Q7jp4YJuQP98Qyl6qL8ecNP+CjLC6zxHTxZej1
+
+          KarcjgW52fGhdpshDstSaFwMT/U5hOjlRsBNFaInjL10XqtSRdjcnzbwzQKBgFiv
+
+          LK/jTGatRWr8tSYnngiIC1KlF6A5ONz7Tky9zXrB4gD+Mizho5BD6OiiNbhiZ1oi
+
+          hvwDEO0DbIvN+AV77DISThxycBKvqlolRpjjQv3xjqN14FZYgchRfxM5P3PD6z3+
+
+          0UuA2O0ndr5ZNopaoy6AsF7Osj9DNXhBQpaHwiyxAoGAIInAgXjIh1qP8cqzGXZm
+
+          jMbwbalLuK1NmPX6EauBz0kmdnL67Fc1z64jX8F046yiizioM1oTMgVf5zBcxwO4
+
+          mEbbzfrEBumwhHRl7s7ZtHpqUY+sli64+sbO8Rgsk/8TZC3rduKHvNnGSTtYnuvI
+
+          ds2s/nU4r6+kzHeXKZbYIxc=
+
+          -----END PRIVATE KEY-----
+
+          '
+        private_key_id: f86af772c527a56e32065a33c186fa0dceca16ba
+        project_id: kestra2-495702
+        token_uri: https://oauth2.googleapis.com/token
+        type: service_account
+      location: US
+      maximum_bytes_billed: 1000000000
+      method: service-account-json
+      project: kestra2-495702
+      schema: world_cup_analyticvs_dbt
+      scopes:
+      - https://www.googleapis.com/auth/bigquery
+      - https://www.googleapis.com/auth/cloud-platform
+      - https://www.googleapis.com/auth/drive
+      - https://www.googleapis.com/auth/userinfo.email
+      target_name: default
+      threads: 4
+      type: bigquery
+  target: default
