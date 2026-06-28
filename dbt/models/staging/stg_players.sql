@@ -10,4 +10,5 @@ select
     player_date_of_birth,
     player_age
 
-from {{ source('world_cup', 'players')}}
+from {{ source('world_cup', 'players') }}
+where player_position != 'Coach'

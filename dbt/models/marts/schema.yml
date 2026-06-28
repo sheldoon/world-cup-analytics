@@ -1,0 +1,40 @@
+version: 2
+
+models:
+  - name: fct_matches
+    description: "Tabela fato de partidas com métricas calculadas"
+    columns:
+      - name: match_id
+        description: "Identificador único da partida"
+        tests:
+          - unique
+          - not_null
+      - name: total_goals
+        description: "Total de gols na partida"
+        tests:
+
+  - name: fct_scorers
+    description: "Tabela fato de artilheiros com métricas calculadas"
+    columns:
+      - name: player_id
+        description: "Identificador único do jogador"
+        tests:
+          - unique
+          - not_null
+      - name: goals_per_match
+        description: "Média de gols por partida"
+        tests:
+          - not_null
+
+  - name: dim_teams
+    description: "Dimensão de times com dados de elenco"
+    columns:
+      - name: team_id
+        description: "Identificador único do time"
+        tests:
+          - unique
+          - not_null
+      - name: squad_size
+        description: "Tamanho do elenco"
+        tests:
+          - not_null
