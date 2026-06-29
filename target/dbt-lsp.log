@@ -1,0 +1,10 @@
+==================== 2026-06-23T02:45:53.753834Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-06-23T02:45:53.753926Z | d1a4f29a-7229-4926-a430-8903aca373d8 ====================
+02:45:53.753945 [info ]: Starting dbt LSP server
+02:45:53.753961 [info ]: Connecting to LSP client on port 51241
+02:45:53.754189 [info ]: Successfully connected to LSP client
+02:45:53.754211 [info ]: Creating LSP service...
+02:45:53.814889 [info ]: Creating LSP server...
+02:45:53.814917 [info ]: Starting LSP server...
+02:45:54.272607 [info ]: Started loading project
+02:45:54.272698 [info ]: Finished loading project [  0.00s]

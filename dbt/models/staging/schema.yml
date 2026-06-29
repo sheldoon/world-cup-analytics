@@ -1,0 +1,71 @@
+version: 2
+
+models:
+  - name: stg_matches
+    description: "Partidas da Copa do Mundo 2026 com dados de resultado e fase"
+    columns:
+      - name: match_id
+        description: "Identificador único da partida"
+        tests:
+           - unique
+           - not_null
+      - name: match_status
+        description: "Status da partida: FINISHED, TIMED, IN_PLAY"
+        tests:
+          - not_null
+          - accepted_values:
+              arguments: 
+                values:
+                  - 'FINISHED'
+                  - 'TIMED'
+                  - 'IN_PLAY'
+                  - 'PAUSED'
+                  - 'POSTPONED'
+      - name: home_team_id
+        description: "ID do time da casa"
+
+      - name: away_team_id
+        description: "id do time visitante"
+
+  
+  - name: stg_players
+    description: "Elenco completo dos 48 times da Copa do Mundo 2026"
+    columns:
+      - name: player_id
+        description: "ID únido do jogador"
+        tests:
+          - unique
+          - not_null
+      - name: team_id
+        description: "ID do time do jogador"
+        tests:
+          - not_null
+      - name: player_position
+        description: "Posiçao do jogador"
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values:
+                  - 'Goalkeeper'
+                  - 'Defence'
+                  - 'Midfield'
+                  - 'Offence'
+
+  - name: stg_scorers
+    description: "Artilheiros da Copa do Mundo 2026"
+    columns:
+      - name: player_id
+        description: "ID único do jogador"
+        tests:
+          - unique
+          - not_null
+      - name: goals
+        description: "Total de gols marcado"
+        tests:
+          - not_null
+      - name: team_id
+        description: "ID do time"
+        tests:
+          - not_null
+          
