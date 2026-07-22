@@ -7,3 +7,5 @@ sources:
       - name: matches_external
       - name: players
       - name: scorers
+      - name: teams_external
+      - name: scorers_external
