@@ -10,7 +10,9 @@ select
     countif(player_position = 'Goalkeeper') as goalkeepers,
     countif(player_position = 'Defence') as defenders,
     countif(player_position = 'Midfield') as midfielders,
-    countif(player_position = 'Offence') as forwards
+    countif(player_position = 'Offence') as forwards,
+    countif(player_age < 23) as players_sub23,
+    countif(player_age >= 30) as players_over30
 
 from {{ref('stg_players')}}
 
